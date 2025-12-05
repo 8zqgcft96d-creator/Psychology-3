@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理測驗｜你是哪一種角色？</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>心理測驗：你是哪一種角色？</h1>
+
+        <!-- 問題區 -->
+        <div id="questionContainer"></div>
+
+        <button id="nextBtn" onclick="nextQuestion()">下一題</button>
+
+        <!-- 結果 -->
+        <div id="resultSection" class="hidden">
+            <h2>你的測驗結果</h2>
+            <canvas id="radarChart"></canvas>
+            <div id="resultText"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
